@@ -90,6 +90,8 @@ int getTemp(String command) {
   sensors.requestTemperatures();
   
   int temp = sensors.getTempCByIndex(0);
-    
+  
+  Serial.println(temp);  
+  
   return temp;
 }
